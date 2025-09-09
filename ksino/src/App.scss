@@ -1,0 +1,84 @@
+// Variables de colores
+$primary-color: #25D366; // Verde WhatsApp
+$secondary-color: #FFD700; // Dorado
+$dark-bg: #1a1a1a;
+$text-light: #ffffff;
+$text-muted: #cccccc;
+
+// Reset y configuración base
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: $text-light;
+  overflow-x: hidden;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+// Animaciones
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px $primary-color;
+  }
+  50% {
+    box-shadow: 0 0 20px $primary-color, 0 0 30px $primary-color;
+  }
+  100% {
+    box-shadow: 0 0 5px $primary-color;
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .app {
+    padding: 20px;
+  }
+}

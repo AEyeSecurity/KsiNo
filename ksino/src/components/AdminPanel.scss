@@ -1,0 +1,87 @@
+.admin-panel {
+  padding: 20px;
+  background: #f8f9fa;
+  min-height: 100vh;
+
+  h2 {
+    color: #333;
+    margin-bottom: 30px;
+  }
+
+  .card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 10px;
+
+    .card-header {
+      background: linear-gradient(45deg, #25D366, #128C7E);
+      color: white;
+      border-radius: 10px 10px 0 0 !important;
+      border: none;
+
+      h4 {
+        margin: 0;
+        font-weight: 600;
+      }
+    }
+
+    .card-body {
+      padding: 25px;
+    }
+  }
+
+  .form-control {
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      border-color: #25D366;
+      box-shadow: 0 0 0 0.2rem rgba(37, 211, 102, 0.25);
+    }
+  }
+
+  .btn {
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    &.btn-primary {
+      background: linear-gradient(45deg, #25D366, #128C7E);
+      border: none;
+
+      &:hover {
+        background: linear-gradient(45deg, #128C7E, #25D366);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+      }
+    }
+
+    &.btn-success {
+      background: linear-gradient(45deg, #28a745, #20c997);
+      border: none;
+
+      &:hover {
+        background: linear-gradient(45deg, #20c997, #28a745);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+      }
+    }
+
+    &.btn-outline-danger {
+      border-color: #dc3545;
+      color: #dc3545;
+
+      &:hover {
+        background: #dc3545;
+        border-color: #dc3545;
+      }
+    }
+  }
+
+  .alert {
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+  }
+}
