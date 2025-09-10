@@ -4,6 +4,8 @@ import './LandingPage.scss'
 
 const LandingPage = ({ onWhatsAppClick }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  
+  // Conjunto fijo de imágenes - por ahora estático
   const [images] = useState([
     "/src/assets/images/1.jpeg",
     "/src/assets/images/2.jpeg"

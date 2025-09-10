@@ -15,16 +15,8 @@ export const LANDING_CONFIG = {
     // Números de WhatsApp para cada cajero
     whatsappNumbers: [
       {
-        number: "1234567890", // Reemplaza con el número real del primer cajero
+        number: "5493515282107", // Reemplaza con el número real del primer cajero
         message: "Hola! Quiero jugar en Imperial Luck"
-      },
-      {
-        number: "0987654321", // Reemplaza con el número real del segundo cajero
-        message: "¡Hola! Me interesa jugar"
-      },
-      {
-        number: "1122334455", // Reemplaza con el número real del tercer cajero
-        message: "Quiero empezar a jugar ahora"
       }
     ]
   },
